@@ -1,8 +1,9 @@
 import React from 'react'
+import BookShelf from './BookShelf'
 
 const BookShelves = (props) => {
 	return (
-		<div> Book Shelves </div>
+		< BookShelf/>
 	)
 }
 
