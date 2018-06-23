@@ -3,8 +3,8 @@ import Book from './Book'
 
 const BookShelf = (props) => {
 	return (
-		<div>
-			Book Shelf
+		<div className='bookshelf'>
+			<h2>Book Shelf</h2>
 			<Book />
 		</div>
 	)

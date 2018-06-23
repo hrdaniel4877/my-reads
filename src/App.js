@@ -18,7 +18,9 @@ class BooksApp extends React.Component {
 
   render() {
     return (
-      <BookShelves />
+      <div className='app'>
+        <BookShelves />
+      </div>
     )
   }
 }

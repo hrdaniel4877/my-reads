@@ -3,7 +3,10 @@ import BookShelf from './BookShelf'
 
 const BookShelves = (props) => {
 	return (
-		< BookShelf/>
+		<div className='list-books'>
+			<h1>Book Shelves</h1>
+			<BookShelf />
+		</div>
 	)
 }
 
