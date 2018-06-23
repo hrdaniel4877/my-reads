@@ -23,9 +23,21 @@ class BooksApp extends React.Component {
   }
 
   render() {
+    
+    const shelves = [
+      {id: 'currentlyReading', title: 'Currently Reading'},
+      {id: 'wantToRead', title: 'Want to Read'},
+      {id: 'read', title: 'Read'}
+    ]
+
+    const{books} = this.state
+
     return (
       <div className='app'>
-        <BookShelves />
+        <BookShelves 
+          shelves={shelves}
+          books={books}          
+        />
       </div>
     )
   }
