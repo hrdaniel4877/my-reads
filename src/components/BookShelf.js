@@ -3,7 +3,7 @@ import Book from './Book'
 
 const BookShelf = (props) => {
 	
-    const {shelf, books} = props
+    const {shelf, books, onChangeShelf} = props
 
 	return (
         <div className="bookshelf">
@@ -13,7 +13,8 @@ const BookShelf = (props) => {
                     {books.map((book) => (
                         <li key={book.id}>
                             <Book 
-                                book={book} 
+                                book={book}
+                                onChangeShelf={onChangeShelf}
                             />
                         </li>
                     ))}
