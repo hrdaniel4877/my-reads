@@ -6,23 +6,20 @@ import BookShelves from './components/BookShelves'
 import SearchBooks from './components/SearchBooks'
 
 class BooksApp extends React.Component {
+  
+  // the component's state
   state = {
-    /**
-     * TODO: Instead of using this state variable to keep track of which page
-     * we're on, use the URL in the browser's address bar. This will ensure that
-     * users can use the browser's back and forward buttons to navigate between
-     * pages, as well as provide a good URL they can bookmark and share.
-     */
-    //showSearchPage: false,
     books: []
   }
 
+  // load the books after the components mounted
   componentDidMount() {
     BooksAPI.getAll().then((books) => {
       this.setState({ books })
     })
   }
 
+  // function to handle the books' shelf change
   changeShelf = (book, shelf) => {
     book.shelf = shelf
     BooksAPI.update(book, shelf).then( _=> {
@@ -32,6 +29,7 @@ class BooksApp extends React.Component {
 
   render() {
     
+    // the shelves's IDs
     const shelves = [
       {id: 'currentlyReading', title: 'Currently Reading'},
       {id: 'wantToRead', title: 'Want to Read'},
