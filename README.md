@@ -34,6 +34,10 @@ Any book in the list below has the same actions button aforementioned.
 By clicking on one of the actions, the book can be moved to the appropriate shelf on the home screen.
 By clicking the back arrow in the front of the search filed, the user is taken back to the home page. 
 
+IMPORTANT!
+By design, provided in the starter package, the search terms are limited to a particular set!
+See below for more info!
+
 
 ## Dependencies
 ```bash
