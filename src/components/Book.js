@@ -26,9 +26,6 @@ class Book extends Component {
                 </div>
                 <div className="book-title">{book.title}</div>
                 <div className="book-authors">{book.authors}</div>
-                <div className="book-info">
-                    <a href="#" onClick={(event) => this.showBookDescription(event)}>Description</a>
-                </div>
 			</div>
 		)
 	}
